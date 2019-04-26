@@ -1,0 +1,37 @@
+#results {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#results td, #results th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#results tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+#results tr:hover {
+	background-color: #ddd;
+}
+
+#results th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #3465A4;
+	color: white;
+}
+
+button {
+  background-color: #ddd;
+	border: 2;
+	width: 25%;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

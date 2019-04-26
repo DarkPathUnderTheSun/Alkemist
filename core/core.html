@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        ALKEMIST
+    </title>
+    <script type="text/javascript" src="core.js"></script>
+    <link rel="stylesheet" type="text/css" href="core.css">
+</head>
+<body>
+    
+    <h1>
+        Frontend para el simulador de núcleo atómico "Alkemist".
+    </h1>
+    <p>
+        Por ahora no contiene gráficos. Se supone que el usuario controla un acelerador de partículas, 
+        el cual usa para disparar protones o neutrones para cambiar el núcleo atómico. El usuario así puede
+        observar cómo un simple proton puede pasar a ser cualquier átomo.
+    </p>
+    
+    <button type="button"
+        onclick="addParticle(1, 'proton')">
+        Lanzar proton
+    </button>
+
+    <button type="button" 
+        onclick="addParticle(1, 'neutron')">
+        Lanzar neutron
+    </button>
+    <br>
+    <button type="button" 
+        onclick="addParticle(-1, 'proton')">
+        Quitar proton
+    </button>
+
+    <button type="button" 
+        onclick="addParticle(-1, 'neutron')">
+        Quitar neutron
+    </button>
+    <br>
+    <button type="button" 
+        onclick="addParticle(10, 'proton')">
+        Lanzar 10 protones
+    </button>
+
+    <button type="button" 
+        onclick="addParticle(10, 'neutron')">
+        Lanzar 10 neutrones
+    </button>
+    <br>
+    <button type="button" 
+        onclick="addParticle(-10, 'proton')">
+        Quitar 10 protones
+    </button>
+
+    <button type="button" 
+        onclick="addParticle(-10, 'neutron')">
+        Quitar 10 neutrones
+    </button>
+    <br>
+    <button type="button" 
+        onclick="addParticle(100, 'proton')">
+        Lanzar 100 protones
+    </button>
+
+    <button type="button" 
+        onclick="addParticle(100, 'neutron')">
+        Lanzar 100 neutrones
+    </button>
+    <br>
+    <button type="button" 
+        onclick="addParticle(-100, 'proton')">
+        Quitar 100 protones
+    </button>
+
+    <button type="button" 
+        onclick="addParticle(-100, 'neutron')">
+        Quitar 100 neutrones
+    </button>
+    <br>
+    <br>
+
+
+    <table id="results">
+        <tr>
+            <th>Protones</th>
+            <th>Neutrones</th>
+            <th>Nombre del elemento</th>
+            <th>Símbolo</th>
+            <th>Decadencia</th>
+            <th>Número atómico</th>
+            <th>Masa</th>
+            <th>Radio</th>
+            <th>Existe?</th>
+        </tr>
+        <tr>
+            <td id="#protones"></td>
+            <td id="#neutrones"></td>
+            <td id="#elemento"></td>
+            <td id="#simbolo"></td>
+            <td id="#estabilidad"></td>
+            <td id="#numeroatomico"></td>
+            <td id="#masa"></td>
+            <td id="#radio"></td>
+            <td id="#existe"></td>
+        </tr>
+    </table>
+
+</body>
+</html> 
